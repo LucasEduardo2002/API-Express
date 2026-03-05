@@ -6,7 +6,10 @@ export const LivroController = {
     },
     CriarLivro: (req, res) => {
         const LivroNovo = LivroService.AddLivro(req.body);
-        res.status(201).json(LivroNovo);
+        if (LivroNovo) {
+            return res.status(201).json(LivroNovo);
+        }
+        res.status(409).json({ message: "Livro já existente" });
     },
     RemoverLivro: (req, res) => {
         const id = Number(req.params.id);

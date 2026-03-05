@@ -1,1 +1,1 @@
-{"version":3,"file":"LivroController.d.ts","sourceRoot":"","sources":["../../src/cotrollers/LivroController.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,QAAQ,EAAC,MAAM,SAAS,CAAC;AAGhD,eAAO,MAAM,eAAe;wBAEC,OAAO,OAAO,QAAQ;sBAIxB,OAAO,OAAO,QAAQ;wBAIpB,OAAO,OAAO,QAAQ;CAKlD,CAAA"}
+{"version":3,"file":"LivroController.d.ts","sourceRoot":"","sources":["../../src/cotrollers/LivroController.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,QAAQ,EAAC,MAAM,SAAS,CAAC;AAGhD,eAAO,MAAM,eAAe;wBAEC,OAAO,OAAO,QAAQ;sBAIxB,OAAO,OAAO,QAAQ;wBAOpB,OAAO,OAAO,QAAQ;CAKlD,CAAA"}
