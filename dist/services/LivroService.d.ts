@@ -4,6 +4,6 @@ export declare const LivroService: {
     Buscar: (id: number) => false | Livro | undefined;
     AddLivro: (livro: Livro) => false | Livro;
     Remover: (id: number) => boolean;
-    Alterar: (id: number, livro: Livro) => false | Livro | undefined;
+    Alterar: (id: number, livro: Livro) => false | Livro;
 };
 //# sourceMappingURL=LivroService.d.ts.map

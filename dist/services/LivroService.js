@@ -26,18 +26,15 @@ export const LivroService = {
         return true;
     },
     Alterar: (id, livro) => {
-        for (var i = 0; i < biblioteca.length; i++) {
-            if (id == biblioteca[i]?.id) {
-                const livroEncontrado = biblioteca[i];
-                if (livroEncontrado) {
-                    livroEncontrado.nome = livro.nome;
-                    livroEncontrado.descricao = livro.descricao;
-                    biblioteca[i] = livroEncontrado;
-                }
-                return biblioteca[i];
-            }
+        const LivroEncontrado = biblioteca.find(l => l.id === id);
+        if (LivroEncontrado) {
+            LivroEncontrado.nome = livro.nome;
+            LivroEncontrado.descricao = livro.descricao;
+            return LivroEncontrado;
         }
-        return false;
+        else {
+            return false;
+        }
     }
 };
 //# sourceMappingURL=LivroService.js.map

@@ -37,21 +37,20 @@ export const LivroService = {
     },
 
     Alterar: (id: number, livro: Livro) => {
-        for (var i = 0; i < biblioteca.length; i++) {
-            if (id == biblioteca[i]?.id) {
-                const livroEncontrado = biblioteca[i];
 
-                if (livroEncontrado) {
-                    livroEncontrado.nome = livro.nome;
-                    livroEncontrado.descricao = livro.descricao;
+        const LivroEncontrado = biblioteca.find(l => l.id === id)
+        if (LivroEncontrado) {
+            LivroEncontrado.nome = livro.nome;
+            LivroEncontrado.descricao = livro.descricao;
 
-                    biblioteca[i] = livroEncontrado;
-                }
-                
-                return biblioteca[i];
-            }
+            return LivroEncontrado;
+        }else{
+            return false;
         }
-        return false;
-    }
 
+
+    }
 }
+
+
+

@@ -1,1 +1,1 @@
-{"version":3,"file":"LivroService.d.ts","sourceRoot":"","sources":["../../src/services/LivroService.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,yBAAyB,CAAC;AAKrD,eAAO,MAAM,YAAY;;iBAIR,MAAM;sBAWD,KAAK;kBAYT,MAAM;kBAKN,MAAM,SAAS,KAAK;CAkBrC,CAAA"}
+{"version":3,"file":"LivroService.d.ts","sourceRoot":"","sources":["../../src/services/LivroService.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,yBAAyB,CAAC;AAKrD,eAAO,MAAM,YAAY;;iBAIR,MAAM;sBAWD,KAAK;kBAYT,MAAM;kBAKN,MAAM,SAAS,KAAK;CAcrC,CAAA"}
