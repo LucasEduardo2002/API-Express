@@ -1,5 +1,13 @@
 import { LivroService } from '../services/LivroService.js';
 export const LivroController = {
+    BuscarLivro: (req, res) => {
+        const id = Number(req.params.id);
+        const BuscarLivro = LivroService.Buscar(id);
+        if (BuscarLivro) {
+            return res.status(201).json(BuscarLivro);
+        }
+        return res.status(404).json({ message: "Livro não encontrado" });
+    },
     ListarLivros: (req, res) => {
         const ConsultaLivros = LivroService.Listar();
         res.json(ConsultaLivros);
@@ -13,8 +21,16 @@ export const LivroController = {
     },
     RemoverLivro: (req, res) => {
         const id = Number(req.params.id);
-        LivroService.RemoverLivro(id);
+        LivroService.Remover(id);
         res.status(204).json("Livro removido com sucesso");
+    },
+    AlterarLivro: (req, res) => {
+        const id = Number(req.params.id);
+        const LivroAlterado = LivroService.Alterar(id, req.body);
+        if (LivroAlterado) {
+            return res.status(201).json(LivroAlterado);
+        }
+        res.status(404).json({ message: "Livro não encontrado" });
     }
 };
 //# sourceMappingURL=LivroController.js.map
